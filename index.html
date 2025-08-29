@@ -23,15 +23,15 @@
 
             <div id="nav-right-parent" class="flex gap-5 pt-7 md:pt-0">
                 <div class="bg-[#41FF6B1A] font-bold py-[14px] px-[36px] rounded-full flex items-center gap-[10px]">
-                    <h4>0</h4>
-                    <img class="w-[24px] h-[24px]" src="./assets/coin.png" alt="">
+                    <h4 id="nav-heart">0</h4>
+                    <img class="w-[24px] h-[24px]" src="./assets/heart.png" alt="">
                 </div>
                 <div class="bg-[#41FF6B1A] font-bold py-[14px] px-[36px] rounded-full flex items-center gap-[10px]">
-                    <h4>100</h4>
-                    <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="">
+                    <h4 id="coin">100</h4>
+                    <img class="w-[30px] h-[30px]" src="./assets/coin.png" alt="">
                 </div>
                 <div class="bg-[#00A63E] text-white font-semibold py-[14px] px-[36px] rounded-full">
-                    <h4>2 Copy</h4>
+                    <h4 id="copy-count">0 Copy</h4>
                 </div>
 
             </div>
@@ -46,10 +46,10 @@
     <main class="bg-[#F5FFF6] h-full pt-12 pb-16 ">
         <section id="card-section " class="w-11/12 mx-auto lg:grid grid-cols-12 gap-x-7">
             <!--all-card-here-->
-    <div id="card-parent" class="col-span-9">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-8">
+    <div  class="col-span-9">
+        <div id="card-parent" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-8">
             <!--card 1-->
-            <div class="shadow-md p-8 bg-white rounded-xl">
+            <div class="card shadow-md p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center">
                     <div class="bg-[#FFE3E2] p-4 rounded-2xl">
                         <img class="w-8 h-8 " src="./assets/emergency.png" alt="">
@@ -72,7 +72,7 @@
                 </div>
             </div>
             <!--card 2-->
-            <div class="shadow-md p-8 bg-white rounded-xl">
+            <div class="card shadow-md p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center">
                     <div class="bg-[#DFEFFF] p-4 rounded-2xl">
                         <img class="w-8 h-8 " src="./assets/police.png" alt="">
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <!--card 3-->
-            <div class="shadow-md p-8 bg-white rounded-xl">
+            <div class="card shadow-md p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center">
                     <div class="bg-[#FFE3E2] p-4 rounded-2xl">
                         <img class="w-8 h-8 " src="./assets/ambulance.png" alt="">
@@ -118,7 +118,7 @@
                 </div>
             </div>
             <!--card 4-->
-            <div class="shadow-md p-8 bg-white rounded-xl">
+            <div class="card shadow-md p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center">
                     <div class="bg-[#FFE3E2] p-4 rounded-2xl">
                         <img class="w-8 h-8 " src="./assets/ambulance.png" alt="">
@@ -141,7 +141,7 @@
                 </div>
             </div>
             <!--card 5-->
-            <div class="shadow-md p-8 bg-white rounded-xl ">
+            <div class="card shadow-md p-8 bg-white rounded-xl ">
                 <div class="flex justify-between items-center">
                     <div class="bg-[#41FF6B1A] p-4 rounded-2xl">
                         <img class="w-8 h-8 " src="./assets/brac.png" alt="">
@@ -164,7 +164,7 @@
                 </div>
             </div>
             <!--card 6-->
-            <div class="shadow-md p-8 bg-white rounded-xl">
+            <div class="card shadow-md p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center">
                     <div class="bg-[#FFE3E2] p-4 rounded-2xl">
                         <img class="w-8 h-8 " src="./assets/logo-dark.png" alt="">
@@ -187,7 +187,7 @@
                 </div>
             </div>
             <!--card 7-->
-            <div class="shadow-md p-8 bg-white rounded-xl">
+            <div class="card shadow-md p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center">
                     <div class="bg-[#FFE3E2] p-4 rounded-2xl">
                         <img class="w-8 h-8 " src="./assets/logo.png" alt="">
@@ -210,7 +210,7 @@
                 </div>
             </div>
             <!--card 8-->
-            <div class="shadow-md p-8 bg-white rounded-xl">
+            <div class="card shadow-md p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center">
                     <div class="bg-[#DFEFFF] p-4 rounded-2xl">
                         <img class="w-8 h-8 " src="./assets/police.png" alt="">
@@ -233,7 +233,7 @@
                 </div>
             </div>
             <!--card 9-->
-            <div class="shadow-md p-8 bg-white rounded-xl">
+            <div class="card shadow-md p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center">
                     <div class="bg-[#FFE3E2] p-4 rounded-2xl">
                         <img class="w-8 h-8 " src="./assets/logo.png" alt="">
@@ -258,19 +258,17 @@
             </div>
             </div>
             <!--aside section-->
-         <aside class="bg-white rounded-xl shadow-md col-span-3 ">
-            <section>
-                <div class="flex justify-between items-center m-6">
+         <aside class="bg-white rounded-xl shadow-md col-span-3">
+            <section id="aside-section">
+                <div id="aside-child1" class="flex justify-between items-center m-6">
                     <h3 id="aside-btn1" class="font-bold"><i class="fa-regular fa-clock"></i> Call History</h3>
                     <h3 id="aside-btn2" class="bg-[#00A63E] py-[14px] px-[36px] rounded-3xl text-white font-semibold"> Clear </h3>
-
                 </div>
-                <div>
 
-                </div>
             </section>
             </aside>
         </section>
     </main>
+    <script src="./project.js"></script>
 </body>
 </html>
