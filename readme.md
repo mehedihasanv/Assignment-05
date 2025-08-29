@@ -1,4 +1,4 @@
-1. Difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll
+ What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
 getElementById("id") - selects a single element by its unique id and returns only one element.
 
@@ -11,8 +11,7 @@ querySelectorAll("selector") - returns all matching elements as a static NodeLis
 
 
 
-
-2. How to create and insert a new element into the DOM
+ How do you **create and insert a new element into the DOM**?
 
 First  create the element using document.createElement("tagName").
 Then  add text with .textContent or HTML with .innerHTML.
@@ -22,7 +21,7 @@ Finally, insert it into the DOM with .appendChild, .prepend, or .insertBefore.
 
 
 
-3. What is Event Bubbling and how does it work?
+ What is **Event Bubbling** and how does it work?
 
 Event bubbling is when an event starts from the target element and moves upward through its ancestors.
 For example, a click on a button triggers the button’s event, then its parent div’s event, and so on up to document.
@@ -32,8 +31,7 @@ This can be useful but sometimes needs to be stopped with stopPropagation().
 
 
 
-
-4. What is Event Delegation in JavaScript? Why is it useful?
+ What is **Event Delegation** in JavaScript? Why is it useful?
 
 Event delegation means attaching one event listener to a parent element to handle events from its children.
 It works because of event bubbling, where the event reaches the parent and can be checked for the target.
@@ -42,9 +40,11 @@ It is especially useful when child elements are created dynamically after the pa
 
 
 
-5. Difference between preventDefault() and stopPropagation()
+ What is the difference between **preventDefault() and stopPropagation()** methods?
 
 preventDefault() stops the default browser action, like preventing a form from submitting or a link from opening.
+
 stopPropagation() stops the event from bubbling up to parent elements.
+
 They serve different purposes: one blocks default behavior, the other blocks event flow.
 Often, they are used together when you want full control over an event.

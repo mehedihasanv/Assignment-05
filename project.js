@@ -1,4 +1,4 @@
-// // <!--heart icon increase function-->
+ // <!--heart icon increase function-->
 
 
 let heartCount=0;
@@ -14,7 +14,7 @@ for (const button of allButtons) {
 }
 
 
-// // <!--call button all function-->
+//  <!--call button all function--> 
 
 
 let coinCount = parseInt(document.getElementById("coin").textContent);
